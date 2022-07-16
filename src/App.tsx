@@ -1,6 +1,14 @@
+import { AddTask } from "./components/AddTask"
+import { Header } from "./components/Header"
+import { TaskList } from "./components/TaksList"
+
 function App() {
   return (
-    <div>Hello world</div>
+    <>
+      <Header />
+      <AddTask />
+      <TaskList />
+    </>
   )
 }
 
