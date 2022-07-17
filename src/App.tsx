@@ -1,4 +1,4 @@
-import { AddTask } from "./components/AddTask"
+import { NewTask } from "./components/NewTask"
 import { Header } from "./components/Header"
 import { TaskList } from "./components/TaksList"
 
@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Header />
-      <AddTask />
-      <TaskList />
+          <NewTask />
+          <TaskList />
     </>
   )
 }
