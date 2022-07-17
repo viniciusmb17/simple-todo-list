@@ -1,11 +1,11 @@
-import React from "react";
-import todoLogo from '../assets/logo.svg';
 import styles from './Header.module.css';
+
+import toDoLogo from '../assets/logo.svg';
 
 export function Header(){
   return (
     <header className={styles.header}>
-      <img src={todoLogo} />
+      <img src={toDoLogo} alt="ToDo List Logo"/>
     </header>
   )
 }
