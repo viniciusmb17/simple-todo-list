@@ -16,6 +16,8 @@
   --gray-700:  #0D0D0D;
   
   --black: #000;
+  
+  --danger: #E25858;
 }
 
 :focus {

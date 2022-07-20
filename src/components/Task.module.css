@@ -1,0 +1,18 @@
+.task {
+
+}
+
+.task input[type='checkbox']{
+
+}
+
+.delete {
+  color: var(--gray-300);
+  border-radius: 4px;
+}
+
+.delete:hover {
+  color: var(--danger);
+  background: var(--gray-400);
+  
+}
