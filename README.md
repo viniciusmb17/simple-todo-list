@@ -5,7 +5,7 @@ This is a simple ToDo List project.
 
 
 ## Progress
-![30%](https://progress-bar.dev/30?title=Simple-ToDo-List)
+![project](https://progress-bar.dev/30?title=Project)
 
 This project is under development...
 
