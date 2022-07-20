@@ -4,7 +4,10 @@
 This is a simple ToDo List project.
 
 
+## Progess to conclusion
+![30%](https://progress-bar.dev/30?title=progress)
 
+This project is under development...
 
 ## Demo
 
