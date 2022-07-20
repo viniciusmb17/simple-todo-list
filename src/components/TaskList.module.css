@@ -53,3 +53,22 @@
   color: var(--gray-200);
   font-size: 0.75rem;
 }
+
+.content {
+  width: 46rem;
+  height: 15.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.text {
+  line-height: 140%;
+  text-align: center;
+  color: var(--gray-300);
+}
