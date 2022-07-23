@@ -1,32 +1,28 @@
 import { Trash } from 'phosphor-react';
-import { v4 as uuidv4 } from 'uuid';
-import styles from './Task.module.css'
+import { v4 } from 'uuid';
+import styles from './Task.module.css';
+import { RoundCheckbox } from './RoundCheckbox';
 
-const tasks = [
-  { id: uuidv4, check: false, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-  { id: uuidv4, check: false, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-  { id: uuidv4, check: false, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-  { id: uuidv4, check: true, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-]
-interface divProps {
-  children?: React.ReactChild | React.ReactChild[];
+interface TasksProps {
+  content: {
+    id: typeof v4;
+    check: boolean;
+    text: string;
+  }[]
 }
 
-export function Task() {
+export function Task({ content }: TasksProps) {
   return (
-    <>
+    <div className={styles.list}>
       {
-        tasks.map(task => (
-          <div className={styles.task} key={uuidv4.toString()}>
-            <input type="checkbox" name={task.id.toString()} />
-            {task.text}
-            <Trash 
-              className={styles.delete}
-              size={24}
-            />
+        content.map(task => (
+          <div className={styles.task} key={task.id.toString()}>
+            <RoundCheckbox checked={task.check} />
+            <span>{task.text}</span>
+            <Trash className={styles.delete} />
           </div>
         ))
       }
-    </>
+    </div>
   )
 }

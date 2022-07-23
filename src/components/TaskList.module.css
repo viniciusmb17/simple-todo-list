@@ -29,6 +29,7 @@
   padding: 0;
   gap: 0.5rem;
   font-size: 0.875rem;
+  font-weight: bold;
 }
 .created {
   color: var(--blue);
@@ -38,7 +39,7 @@
 }
 
 .counter {
-  width: 1.5625rem;
+  min-width: 1.5625rem;
   height: 1.1875rem;
   
   display: flex;
