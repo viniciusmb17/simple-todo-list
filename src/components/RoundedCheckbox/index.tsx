@@ -1,11 +1,11 @@
-import styles from './RoundCheckbox.module.css'
+import styles from './RoundedCheckbox.module.css'
 
-interface RoundCheckboxProps {
+interface RoundedCheckboxProps {
   checked: boolean;
   label?: string;
 }
 
-export function RoundCheckbox({ checked, label }: RoundCheckboxProps) {
+export function RoundedCheckbox({ checked, label }: RoundedCheckboxProps) {
 
   return (
     <label className={styles.container}>

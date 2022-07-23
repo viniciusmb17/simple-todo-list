@@ -1,7 +1,7 @@
 import { Trash } from 'phosphor-react';
 import { v4 } from 'uuid';
 import styles from './Task.module.css';
-import { RoundCheckbox } from './RoundCheckbox';
+import { RoundedCheckbox } from '../RoundedCheckbox';
 
 interface TasksProps {
   content: {
@@ -17,7 +17,7 @@ export function Task({ content }: TasksProps) {
       {
         content.map(task => (
           <div className={styles.task} key={task.id.toString()}>
-            <RoundCheckbox checked={task.check} />
+            <RoundedCheckbox checked={task.check} />
             <span>{task.text}</span>
             <Trash className={styles.delete} />
           </div>
