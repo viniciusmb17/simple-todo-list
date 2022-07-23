@@ -1,6 +1,6 @@
 import { Task } from '../Task'
 import { v4 as uuidv4 } from 'uuid';
-import clipboard from '../assets/clipboard.svg'
+import clipboard from '../../assets/clipboard.svg'
 import styles from './TaskList.module.css'
 
 const tasks = [
