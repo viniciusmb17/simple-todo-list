@@ -69,7 +69,6 @@
 }
 
 .text {
-  line-height: 140%;
   text-align: center;
   color: var(--gray-300);
 }
