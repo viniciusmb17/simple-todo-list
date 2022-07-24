@@ -18,7 +18,7 @@ export function Task({ content }: TasksProps) {
         content.map(task => (
           <div className={styles.task} key={task.id.toString()}>
             <RoundedCheckbox checked={task.check} />
-            <span>{task.text}</span>
+            <span className={styles.text}>{task.text}</span>
             <Trash className={styles.delete} />
           </div>
         ))

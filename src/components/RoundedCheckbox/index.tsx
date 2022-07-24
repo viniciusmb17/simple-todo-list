@@ -2,7 +2,7 @@ import styles from './RoundedCheckbox.module.css'
 
 interface RoundedCheckboxProps {
   checked: boolean;
-  label?: string;
+  label: string;
 }
 
 export function RoundedCheckbox({ checked, label }: RoundedCheckboxProps) {

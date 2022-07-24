@@ -13,7 +13,7 @@
     align-items: flex-start;
     padding: 1rem;
     gap: 12px;
-    
+    line-height: 1.4;
     width: 46rem;
 
     background: var(--gray-500);
@@ -22,18 +22,20 @@
     border-radius: 8px;
 }
 
-.task span {
+.text {
   color: var(--gray-100);
   font-size: 0.875rem;
+  max-width: 39.5rem; /* 632px */
 }
 
 .delete {
   color: var(--gray-300);
   border-radius: 4px;
-  width: 1.275rem;
-  height: 1.275rem;
-  min-width: 1.275rem;
-  min-heigth: 1.275rem; 
+  width: 1.09375rem;
+  height: 1.09375rem;
+  min-width: 1.09375rem;
+  min-heigth: 1.09375rem; 
+  cursor: pointer;
 
 }
 
