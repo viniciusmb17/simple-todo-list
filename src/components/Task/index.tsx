@@ -16,10 +16,12 @@ export function Task({ content }: TasksProps) {
     <div className={styles.list}>
       {
         content.map(task => (
-          <div className={styles.task} key={task.id.toString()}>
+          <div className={task.check ? styles.taskChecked : styles.task} key={task.id.toString()}>
             <RoundedCheckbox checked={task.check} />
             <span className={styles.text}>{task.text}</span>
-            <Trash className={styles.delete} />
+            <span className={styles.delete}>
+              <Trash size={17.5} />
+            </span>
           </div>
         ))
       }
