@@ -8,7 +8,7 @@ This is a simple ToDo List project.
 
 This project is under development...
 
-![project](https://progress-bar.dev/35?title=Project)
+![project](https://progress-bar.dev/65?title=Project)
 
 ## Demo
 
