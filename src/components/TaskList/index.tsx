@@ -1,17 +1,17 @@
 import { Task } from '../Task'
-import { v4 as uuidv4 } from 'uuid';
 import clipboard from '../../assets/clipboard.svg'
 import styles from './TaskList.module.css'
 
-const tasks = [
-  { id: uuidv4, check: false, text: 'Integer urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-  { id: uuidv4, check: true, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-  { id: uuidv4, check: false, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-  { id: uuidv4, check: false, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-  { id: uuidv4, check: true, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-]
 
-export function TaskList() {
+interface TaskListProps {
+  tasks: {
+    id: string;
+    check: boolean;
+    text: string;
+  }[]
+}
+
+export function TaskList({ tasks }: TaskListProps) {
 
   const doneTasks = tasks.filter(task => task.check)
 

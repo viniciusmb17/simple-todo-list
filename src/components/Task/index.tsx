@@ -1,11 +1,10 @@
 import { Trash } from 'phosphor-react';
-import { v4 } from 'uuid';
 import styles from './Task.module.css';
 import { RoundedCheckbox } from '../RoundedCheckbox';
 
 interface TasksProps {
   content: {
-    id: typeof v4;
+    id: string;
     check: boolean;
     text: string;
   }[]

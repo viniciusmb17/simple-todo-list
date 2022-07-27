@@ -46,8 +46,8 @@
   content: "";
   position: absolute;
   display: none;
-  left: 0.215625rem;
-  bottom: 0.125rem;
+  left: 30%;
+  bottom: 20%;
   width: 0.21875rem;
   height: 0.5rem;
   border: solid var(--gray-100);
