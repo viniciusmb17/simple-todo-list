@@ -15,15 +15,20 @@ export default function Main() {
     { id: uuidv4(), check: true, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
   ])
 
-  function onNewTask( text: string) {
+  function handleNewTask( text: string) {
     const newTask = { id: uuidv4(), check: false, text }
     setTasks([...tasks, newTask])
   }
 
+  function handleDeleteTask(index: number) {
+    console.log(index)
+    setTasks(tasks.filter((_, idx) => idx !== index ))
+  }
+
   return (
     <main className={styles.wrapper}>
-      <NewTask onNewTask={onNewTask} />
-      <TaskList tasks={tasks} />
+      <NewTask onNewTask={handleNewTask} />
+      <TaskList tasks={tasks} onDeleteTask={handleDeleteTask} />
     </main>
   )
 }

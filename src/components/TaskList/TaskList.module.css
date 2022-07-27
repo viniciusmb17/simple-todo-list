@@ -72,3 +72,8 @@
   text-align: center;
   color: var(--gray-300);
 }
+
+button {
+  background: transparent;
+  border: 0;
+}

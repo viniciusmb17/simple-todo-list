@@ -8,19 +8,21 @@ interface TasksProps {
     check: boolean;
     text: string;
   }[]
+  onDeleteTask: Function;
 }
 
-export function Task({ content }: TasksProps) {
+export function Task({ content, onDeleteTask }: TasksProps) {
+
   return (
     <div className={styles.list}>
       {
-        content.map(task => (
+        content.map((task, index) => (
           <div className={task.check ? styles.taskChecked : styles.task} key={task.id.toString()}>
             <RoundedCheckbox checked={task.check} />
             <span className={styles.text}>{task.text}</span>
-            <span className={styles.delete}>
+            <button className={styles.delete} onClick={() => onDeleteTask(index)}>
               <Trash size={17.5} />
-            </span>
+            </button>
           </div>
         ))
       }
