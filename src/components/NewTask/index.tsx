@@ -11,6 +11,9 @@ export function NewTask({ onNewTask }: NewTaskProps) {
 
   const [text, setText] = useState('')
   const handleNewTask = () => {
+    if(text.length === 0){
+      return alert('Erro! Task não pode ser inserida em branco.')
+    }
     onNewTask(text)
     setText('')
   }
