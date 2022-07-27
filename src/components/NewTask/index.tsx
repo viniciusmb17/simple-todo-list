@@ -10,7 +10,10 @@ interface NewTaskProps {
 export function NewTask({ onNewTask }: NewTaskProps) {
 
   const [text, setText] = useState('')
-  const handleNewTask = () => onNewTask(text)
+  const handleNewTask = () => {
+    onNewTask(text)
+    setText('')
+  }
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target
