@@ -3,16 +3,20 @@ import styles from './RoundedCheckbox.module.css'
 
 interface RoundedCheckboxProps {
   checked: boolean;
+  onCheck: Function;
+  taskIdx: number;
 }
 
-export function RoundedCheckbox({ checked }: RoundedCheckboxProps) {
+export function RoundedCheckbox({ checked, onCheck, taskIdx }: RoundedCheckboxProps) {
   const [check, setCheck] = useState(checked)
-  const onChangeCheck = (check: boolean) => {
+  const handleCheck = (check: boolean) => {
     setCheck(check)
+    onCheck(taskIdx)
   }
+
   return (
     <label className={styles.container}>
-      <input type="checkbox" checked={check} onChange={() => onChangeCheck(checked)} />
+      <input type="checkbox" checked={check} onChange={() => handleCheck(!check)} />
       <span className={styles.checkmark}></span>
     </label>
   )

@@ -21,14 +21,18 @@ export default function Main() {
   }
 
   function handleDeleteTask(index: number) {
-    console.log(index)
     setTasks(tasks.filter((_, idx) => idx !== index ))
+  }
+
+  function handleCheckbox(index: number) {
+    tasks[index].check = !tasks[index].check 
+    setTasks([...tasks])
   }
 
   return (
     <main className={styles.wrapper}>
       <NewTask onNewTask={handleNewTask} />
-      <TaskList tasks={tasks} onDeleteTask={handleDeleteTask} />
+      <TaskList tasks={tasks} onDeleteTask={handleDeleteTask} onCheck={handleCheckbox}/>
     </main>
   )
 }

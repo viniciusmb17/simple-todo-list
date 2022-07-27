@@ -10,9 +10,10 @@ interface TaskListProps {
     text: string;
   }[]
   onDeleteTask: Function;
+  onCheck: Function;
 }
 
-export function TaskList({ tasks, onDeleteTask }: TaskListProps) {
+export function TaskList({ tasks, onDeleteTask, onCheck }: TaskListProps) {
 
   const doneTasks = tasks.filter(task => task.check)
 
@@ -46,7 +47,7 @@ export function TaskList({ tasks, onDeleteTask }: TaskListProps) {
             </div>
           </div>
         ) : (
-          <Task content={tasks} onDeleteTask={onDeleteTask}/>
+          <Task content={tasks} onDeleteTask={onDeleteTask} onCheck={onCheck}/>
         )
       }
     </section>
