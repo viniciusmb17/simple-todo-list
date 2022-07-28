@@ -5,34 +5,34 @@ import { TaskList } from "../../components/TaskList"
 
 import styles from './Main.module.css'
 
+interface taskInterface {
+  id: string;
+  check: boolean;
+  text: string;
+}
+
 export default function Main() {
 
-  const [tasks, setTasks] = useState([
-    { id: uuidv4(), check: false, text: 'Integer urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna iInteger urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-    { id: uuidv4(), check: true, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-    { id: uuidv4(), check: false, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-    { id: uuidv4(), check: false, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-    { id: uuidv4(), check: true, text: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.' },
-  ])
+  const [tasks, setTasks] = useState<taskInterface[]>([])
 
-  function handleNewTask( text: string) {
+  function handleNewTask(text: string) {
     const newTask = { id: uuidv4(), check: false, text }
     setTasks([...tasks, newTask])
   }
 
   function handleDeleteTask(index: number) {
-    setTasks(tasks.filter((_, idx) => idx !== index ))
+    setTasks(tasks.filter((_, idx) => idx !== index))
   }
 
   function handleCheckbox(index: number) {
-    tasks[index].check = !tasks[index].check 
+    tasks[index].check = !tasks[index].check
     setTasks([...tasks])
   }
 
   return (
     <main className={styles.wrapper}>
       <NewTask onNewTask={handleNewTask} />
-      <TaskList tasks={tasks} onDeleteTask={handleDeleteTask} onCheck={handleCheckbox}/>
+      <TaskList tasks={tasks} onDeleteTask={handleDeleteTask} onCheck={handleCheckbox} />
     </main>
   )
 }
