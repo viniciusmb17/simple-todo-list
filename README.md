@@ -4,12 +4,6 @@
 This is a simple ToDo List project.
 
 
-## Progress
-
-This project is under development...
-
-![project](https://progress-bar.dev/65?title=Project)
-
 ## Demo
 
 https://simple-todo-list-viniciusmb17.vercel.app
