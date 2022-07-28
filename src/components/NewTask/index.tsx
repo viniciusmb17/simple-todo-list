@@ -12,7 +12,8 @@ export function NewTask({ onNewTask }: NewTaskProps) {
   const [text, setText] = useState('')
   const handleNewTask = () => {
     if(text.length === 0){
-      return alert('Erro! Task não pode ser inserida em branco.')
+      return alert(`Error!\n 
+        This field is required.`)
     }
     onNewTask(text)
     setText('')
@@ -27,12 +28,12 @@ export function NewTask({ onNewTask }: NewTaskProps) {
     <section className={styles.section}>
       <input
         type="text"
-        placeholder='Adicione uma nova tarefa'
+        placeholder='Add a new task'
         onChange={handleChange}
         value={text}
       />
       <button onClick={handleNewTask}>
-        Criar
+        Add
         <PlusCircle
           size={16}
         />

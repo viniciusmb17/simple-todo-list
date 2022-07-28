@@ -21,14 +21,14 @@ export function TaskList({ tasks, onDeleteTask, onCheck }: TaskListProps) {
     <section className={styles.section}>
       <div className={styles.info}>
         <div className={styles.created}>
-          Tarefas criadas
+          Created tasks
           <div className={styles.counter}>{tasks.length}</div>
         </div>
         <div className={styles.done}>
-          Concluídas
+          Done
           <div className={styles.counter}>
             {doneTasks.length !== 0 ?
-              (`${doneTasks.length} de ${tasks.length}`)
+              (`${doneTasks.length} of ${tasks.length}`)
               :
               0
             }
@@ -42,8 +42,8 @@ export function TaskList({ tasks, onDeleteTask, onCheck }: TaskListProps) {
               <img src={clipboard} alt="clipboard image" width={56} height={56} />
             </span>
             <div className={styles.text}>
-              <p><strong>Você ainda não tem tarefas cadastradas</strong></p>
-              <p>Crie tarefas e organize seus itens a fazer</p>
+              <p><strong>You don't have any tasks yet</strong></p>
+              <p>Add new tasks and organize your to-do items</p>
             </div>
           </div>
         ) : (
