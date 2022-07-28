@@ -4,14 +4,16 @@
     align-items: flex-start;
     padding: 0;
     gap: 1.5rem;
-    width: 46rem;
+    max-width: 46rem;
+    width: 100%;
     height: 17.9375rem;
     position: absolute;
     top: 18.1875rem;
 }
 
 .info {
-  width: 46rem;
+  max-width: 46rem;
+  width: 100%;
   height: 1.1875rem;
 
   display: flex;
@@ -56,7 +58,8 @@
 }
 
 .content {
-  width: 46rem;
+  max-width: 46rem;
+  width:100%;
   height: 15.25rem;
   display: flex;
   flex-direction: column;
