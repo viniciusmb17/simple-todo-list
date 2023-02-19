@@ -1,14 +1,14 @@
 # Simple ToDo List
 
+[![GitHub](https://img.shields.io/github/license/viniciusmb17/simple-todo-list)](https://github.com/viniciusmb17/simple-todo-list/blob/master/licence)
+
+## Summary
+
 This is a simple ToDo List project built with React, Typescript, and CSS Modules.
 
 ## Demo
 
 Check out the live demo of the project at [Simple ToDo List](https://simple-todo-list-viniciusmb17.vercel.app)
-
-## Authors
-
-The author of this project is [@viniciusmb17](https://www.github.com/viniciusmb17).
 
 ## Run Locally
 
@@ -30,22 +30,21 @@ Follow these steps to run the project locally:
 ```bash
   yarn install
 ```
-or
 
-```bash
-  npm install
-```
 4. Start the development environment using either yarn or npm:
 
 ```bash
   yarn dev
 ```
-or
 
-```bash
-  npm run dev
-```  
 ## Tech Stack
   - React
   - Typescript
   - CSS Modules
+
+## Author
+
+The author of this project is Vinicius Maia Barbosa.
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/viniciusmbarbosa/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/viniciusmb17/)
