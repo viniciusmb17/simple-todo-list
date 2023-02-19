@@ -1,56 +1,51 @@
-
 # Simple ToDo List
 
-This is a simple ToDo List project.
-
+This is a simple ToDo List project built with React, Typescript, and CSS Modules.
 
 ## Demo
 
-https://simple-todo-list-viniciusmb17.vercel.app
-
+Check out the live demo of the project at [Simple ToDo List](https://simple-todo-list-viniciusmb17.vercel.app)
 
 ## Authors
 
-- [@viniciusmb17](https://www.github.com/viniciusmb17)
-
+The author of this project is [@viniciusmb17](https://www.github.com/viniciusmb17).
 
 ## Run Locally
 
-#### Clone the project
+Follow these steps to run the project locally:
+
+1. Clone the project to your local machine using the following command:
 
 ```bash
   git clone https://github.com/viniciusmb17/simple-todo-list.git
 ```
 
-#### Go to the project directory
+2. Navigate to the project directory:
 
 ```bash
-  cd my-project
+  cd simple-todo-list
 ```
-
-#### Install dependencies
+3. Install project dependencies using either yarn or npm:
 
 ```bash
-  yarn add
+  yarn install
 ```
 or
+
 ```bash
   npm install
 ```
-
-#### Start development environment
+4. Start the development environment using either yarn or npm:
 
 ```bash
   yarn dev
 ```
 or
+
 ```bash
   npm run dev
-```
-
-
+```  
 ## Tech Stack
-
-React, Typescript, CSS Modules
-
-
+  - React
+  - Typescript
+  - CSS Modules
